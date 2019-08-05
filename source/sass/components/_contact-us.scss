@@ -1,0 +1,31 @@
+// ======================================================
+// Components :: Contact us
+// ======================================================
+
+.contact-us {
+  // background: url('../images/bg-contact.png') 0 0 no-repeat $grey-light;
+  background-size: contain;
+  background-color: $grey-light;
+  margin-bottom: 15px;
+  padding: 105px 0;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+  position: relative;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 701px;
+  }
+
+  .form-customize {
+    margin-bottom: 27px;
+  }
+
+  &__button {
+    margin-top: 15px;
+  }
+
+  @include breakpoint-down(tablet) {
+    clip-path: polygon(50% 0%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+  }
+}

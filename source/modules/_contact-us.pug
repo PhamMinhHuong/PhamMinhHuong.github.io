@@ -1,0 +1,32 @@
+//-------------------------------------------------------
+//- Modules :: Contact Us
+//-------------------------------------------------------
+
+mixin contact-us()
+  .section.contact-us.wow.fadeInLeft
+    .contact-us__inner
+      h3.section__title Contact us
+      form.contact-us__form
+        .row
+          .col-12.col-md-6
+            +input-field({
+              placeholder: 'Name'
+            })
+          .col-12.col-md-6
+            +input-field({
+              placeholder: 'Email'
+            })
+          .col-12
+            +input-field({
+              placeholder: 'Title'
+            })
+          .col-12
+            +textarea({
+              placeholder: 'Content'
+            })(class='form-textarea')
+      .contact-us__button.text-center
+        +buttons({
+          type: 'submit',
+          text: 'Send',
+          size: 'large'
+        })

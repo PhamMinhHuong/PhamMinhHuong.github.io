@@ -1,0 +1,53 @@
+//-------------------------------------------------------
+//- Modules :: Banner
+//-------------------------------------------------------
+
+mixin banner()
+  .section.banner
+    .banner__intro
+      .banner__content
+        .banner__content-wrapper
+          h3.banner__content-logo.wow.bounceInDown
+            | IMPL
+            span vietnam
+          p.banner__content-title.wow.rollIn
+            | Make a revolution with  new technology
+          p.banner__content-des.section__des.wow.bounceInRight
+            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+          +buttons({
+            type: 'submit',
+            text: 'Join with us',
+            size: 'medium'
+          })
+    .banner__about
+      .banner__list.banner__list--right.wow.fadeInLeft
+        .banner__item
+          img(src='images/about-1.png', alt='img')
+        .banner__item
+          img(src='images/about-2.png', alt='img')
+          span.banner__item-title
+            | about us
+        .banner__item.box.box--about
+          .box__wrapper
+            span.box__mark "
+            p.box__quote
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+            span.box__mark.box__mark--right "
+      .banner__list.banner__list--left.wow.bounceInRight
+        .banner__item.box.box--message
+          .box__wrapper
+            span.box__mark "
+            p.box__quote
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+            span.box__mark.box__mark--right "
+          +buttons({
+            type: 'submit',
+            text: 'See all',
+            size: 'small'
+          })
+        .banner__item
+          img(src='images/message-1.png', alt='img')
+          span.banner__item-title
+            | CEO's Message
+        .banner__item
+          img(src='images/message-2.png', alt='img')

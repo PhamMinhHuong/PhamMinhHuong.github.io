@@ -1,0 +1,96 @@
+// ======================================================
+// Components :: Why we
+// ======================================================
+
+.why-we {
+  position: relative;
+  padding-top: 9vh;
+
+  &__info {
+    padding-top: 23vh;
+    background: url('../images/banner-2.png') no-repeat;
+    background-size: 100% 100%;
+    margin-top: -50px;
+  }
+
+  .slick-slide {
+    margin: 0 21px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slick-list {
+    padding-top: 60px;
+  }
+
+  &__slide {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__box {
+    position: relative;
+    text-align: center;
+    padding: 90px 30px 5px;
+    opacity: .74;
+    background-color: $white;
+  }
+
+  &__title {
+    color: $green-dark;
+    font-size: $font-size-large + 6;
+    font-weight: $font-weight-bold;
+    padding-bottom: 43px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: $grey;
+    z-index: 99;
+  }
+
+  &__icon-wrapper {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: $green;
+    box-shadow: 0 2px 4px 0 rgba($black, .19);
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  @include breakpoint-down(phone) {
+    padding-top: 6vh;
+
+    &__info {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__text {
+    color: $gray-light;
+    font-size: $font-size-base;
+    line-height: 25px;
+    word-break: break-word;
+  }
+}

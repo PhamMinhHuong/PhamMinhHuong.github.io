@@ -1,0 +1,26 @@
+include ../modules/page-list/_page-list
+include ../modules/_head
+include ../modules/_header
+include ../modules/_footer
+include ../modules/_buttons
+include ../modules/_forms
+include ../modules/_icons
+include ../modules/_plugins
+include ../modules/_contact-us
+include ../modules/_our-service
+include ../modules/_why-we
+include ../modules/_our-company
+include ../modules/_business-partner
+include ../modules/_static-images
+include ../modules/_banner
+
+doctype html
+html(lang='en')
+  head
+    block head
+
+  body
+    block body
+
+    block scripts
+      +plugins()

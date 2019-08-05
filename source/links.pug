@@ -1,0 +1,61 @@
+extends layout/_page-other
+
+block head
+  +head('List links')
+
+  style.
+    .page-list {
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      margin: 0 -15px;
+      min-height: 100vh;
+    }
+
+    .page-list__title {
+      margin: 40px auto 35px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 9;
+      color: #000;
+    }
+
+    .page-list .table {
+      background-color: #fff;
+      position: relative;
+      z-index: 9;
+      width: 65%;
+      margin: 0 auto 65px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .page-list .table th,
+    .page-list .table td {
+      color: #fff;
+      padding: 13px 15px;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .page-list .table thead tr:first-child th {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .page-list__link {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+
+    .page-list__link:first-letter {
+      font-size: 16px;
+      color: #ffca1a;
+    }
+
+    .page-list__link:hover {
+      color: #fff;
+    }
+
+block body
+  +page-list(pageList.data)

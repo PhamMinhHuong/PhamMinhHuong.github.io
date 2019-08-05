@@ -1,0 +1,21 @@
+{
+  "pageList": {
+    "data": [
+      {
+        "title": "Style Guides",
+        "url": "styleguides",
+        "categories": "N/A"
+      },
+      {
+        "title": "Home",
+        "url": "home",
+        "categories": "Home"
+      },
+      {
+        "title": "Blog",
+        "url": "blog",
+        "categories": "Category"
+      }
+    ]
+  }
+}

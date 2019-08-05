@@ -1,0 +1,26 @@
+// ======================================================
+// Components :: Forms
+// ======================================================
+
+.form-customize {
+  background-color: $white;
+  border: 1px solid $bd-gray;
+  color: $gray-lightest;
+  display: block;
+  font-size: $font-size-base;
+  font-family: $font-family-base1;
+  padding: 8px 20px;
+  width: 100%;
+
+  &:focus {
+    border-color: $green;
+  }
+
+  &::placeholder {
+    color: $gray-lightest;
+  }
+}
+
+.form-textarea {
+  min-height: 135px;
+}

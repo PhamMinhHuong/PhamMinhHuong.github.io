@@ -1,0 +1,17 @@
+// ======================================================
+// Components :: Static Images
+// ======================================================
+
+.static-images {
+  &__item {
+    position: relative;
+  }
+
+  .slick-track {
+    margin: 0 -8px;
+  }
+
+  .slick-slide {
+    margin: 0 8px;
+  }
+}

@@ -1,0 +1,179 @@
+// ======================================================
+// Base :: Global like html, body, img, a, ul
+// ======================================================
+
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/source-sans-pro-v13-latin-regular.eot');
+  src:
+    local('Source Sans Pro Regular'),
+    local('SourceSansPro-Regular'),
+    url('/fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+    url('/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'),
+    url('/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'),
+    url('/fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg');
+}
+
+/* source-sans-pro-italic - latin */
+@font-face {
+  font-family: $font-family-base;
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/source-sans-pro-v13-latin-italic.eot');
+  src:
+    local('Source Sans Pro Italic'),
+    local('SourceSansPro-Italic'),
+    url('/fonts/source-sans-pro-v13-latin-italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro-v13-latin-italic.woff2') format('woff2'),
+    url('/fonts/source-sans-pro-v13-latin-italic.woff') format('woff'),
+    url('/fonts/source-sans-pro-v13-latin-italic.ttf') format('truetype'),
+    url('/fonts/source-sans-pro-v13-latin-italic.svg#SourceSansPro') format('svg');
+}
+
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/source-sans-pro-v13-latin-700.eot');
+  src:
+    local('Source Sans Pro Bold'),
+    local('SourceSansPro-Bold'),
+    url('/fonts/source-sans-pro-v13-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'),
+    url('/fonts/source-sans-pro-v13-latin-700.woff') format('woff'),
+    url('/fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'),
+    url('/fonts/source-sans-pro-v13-latin-700.svg#SourceSansPro') format('svg');
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus,
+button,
+button:focus {
+  outline: none;
+}
+
+button {
+  border: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+}
+
+.unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: $border-radius-small;
+  border: solid 3px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: solid 3px transparent;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.slider {
+  &.slick-initialized {
+    display: block;
+    -webkit-animation: fadein .3s;
+    animation: fadein .3s;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

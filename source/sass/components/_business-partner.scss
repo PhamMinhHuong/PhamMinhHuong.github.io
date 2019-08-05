@@ -1,0 +1,26 @@
+// ======================================================
+// Components :: Business Partner
+// ======================================================
+
+.business-partner {
+  align-items: center;
+  display: flex;
+  height: 420px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &__inner {
+    max-width: 925px;
+
+    @include breakpoint-down(phone) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .section__title {
+    margin-left: 14%;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
+  }
+}

@@ -1,0 +1,30 @@
+//-------------------------------------------------------
+//- Modules :: Buttons
+//-------------------------------------------------------
+
+mixin buttons({ text, type, size, isFull, iconFont, iconImage })
+  button.button(
+    type= type ? type: null
+    class= size ? `button--${size}` : null
+    class= (isFull === true) ? 'button--full' : null
+  )&attributes(attributes)
+    if (iconFont !== '' && iconFont !== undefined)
+      +icon-fonts(iconFont)(class='button__icon')
+    if (iconImage !== '' && iconImage !== undefined)
+      +icon-images(iconImage)(class='button__icon')
+    | #{text}
+
+
+mixin buttons-link({ href, text, type, size, isFull, iconFont, iconImage })
+  a.button(
+    class= type ? `button--${type}` : null
+    class= size ? `button--${size}` : null
+    class= (isFull === true) ? 'button--full' : null
+    href= href ? href : '#'
+    role='button'
+  )&attributes(attributes)
+    if (iconFont !== '' && iconFont !== undefined)
+      +icon-fonts(iconFont)(class='button__icon')
+    if (iconImage !== '' && iconImage !== undefined)
+      +icon-images(iconImage)(class='button__icon')
+    | #{text}
