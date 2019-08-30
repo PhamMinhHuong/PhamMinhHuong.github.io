@@ -1,96 +1,58 @@
-const ImplProject = {
+
+const LacquanProject = {
   Init: function () {
     this.slickSlider();
   },
 
   slickSlider: function () {
-    $('.js-static-images').slick({
+    $('.js_banner-slider').slick({
       arrows: false,
-      autoplay: true,
-      autoplaySpeed: 0,
-      cssEase: 'linear',
-      speed: 8000,
-      slidesToShow: 4,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      swipe: false,
-      touchMove: false,
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
+      dots: false,
+      autoplay: true,
     });
 
-    $('.js-business-partner').slick({
+    $('.js_slider').slick({
       arrows: false,
-      autoplay: true,
-      autoplaySpeed: 0,
-      cssEase: 'linear',
-      speed: 8000,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      swipe: false,
-      touchMove: false,
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2
-          }
-        }
-      ]
-    });
-
-    $('.js-why-we-box').slick({
-      arrows: false,
-      speed: 800,
       slidesToShow: 3,
       slidesToScroll: 1,
+      dots: false,
       autoplay: true,
-      autoplaySpeed: 2000,
-      swipeToSlide: true,
-      edgeFriction: 0,
-      touchThreshold: 10,
-      adaptiveHeight: true,
       responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false,
+          }
+        },
         {
           breakpoint: 768,
           settings: {
-            centerPadding: '0',
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
             slidesToShow: 1,
-            variableWidth: false,
+            slidesToScroll: 1,
+            dots: false,
           }
         }
       ]
     });
 
-    $('.js-our-service').slick({
-      dots: true,
-      centerMode: true,
+    $('.js_testimonial-slider').slick({
       arrows: false,
-      infinite: true,
-      speed: 600,
-      slidesToShow: 3,
-      centerPadding: 0,
+      slidesToShow: 1,
       slidesToScroll: 1,
+      dots: false,
       autoplay: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
     });
   },
 
@@ -103,19 +65,39 @@ const ImplProject = {
   }
 }
 
-$(document).ready(function () {
-  ImplProject.Init();
+$(document).ready(function (e) {
+  LacquanProject.Init();
 
   AOS.init({
     duration: 1200,
     easing: 'ease-out-quart'
   })
+
+  $(document).on('click', function (e) {
+    if ($(e.target).closest('.js-icon-menu').length) {
+      $('.js-menu-mobile').toggleClass('active');
+    } else if (!$(e.target).closest('.js-menu-mobile').length) {
+      $('.js-menu-mobile').removeClass('active');
+    }
+  });
+
+  $('.js-icon-close').on('click', function (e) {
+    $('.js-menu-mobile').removeClass('active');
+  });
+
+  $(window).bind('scroll', function () {
+		if ($(window).scrollTop() > 95) {
+			$('.js_header').addClass('fixed');
+		} else {
+			$('.js_header').removeClass('fixed');
+		}
+	});
 });
 
 $(window).on('load', function () {
-  ImplProject.onLoad();
+  LacquanProject.onLoad();
 });
 
 $(window).on('resize', function () {
-  ImplProject.reSize();
+  LacquanProject.reSize();
 });
