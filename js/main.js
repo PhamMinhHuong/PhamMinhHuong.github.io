@@ -1,15 +1,15 @@
 
 const LacquanProject = {
-  Init: function () {
+  Init: function() {
     this.slickSlider();
   },
 
-  slickSlider: function () {
+  slickSlider: function() {
     $('.js_banner-slider').slick({
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: false,
+      dots: true,
       autoplay: true,
     });
 
@@ -51,21 +51,21 @@ const LacquanProject = {
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: false,
+      dots: true,
       autoplay: true,
     });
   },
 
-  onLoad: function () {
+  onLoad: function() {
     console.log('Onload Project');
   },
 
-  reSize: function () {
+  reSize: function() {
     console.log('Resize Project');
   }
 }
 
-$(document).ready(function (e) {
+$(document).ready(function(e) {
   LacquanProject.Init();
 
   AOS.init({
@@ -73,48 +73,8 @@ $(document).ready(function (e) {
     easing: 'ease-out-quart'
   })
 
-  // Swiper Slider
-  var sliderSelector = '.swiper-container',
-    options = {
-      init: false,
-      loop: true,
-      speed: 800,
-      slidesPerView: 3,
-      centeredSlides : true,
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      grabCursor: true,
-      parallax: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        1180: {
-          slidesPerView: 2
-        },
-        1023: {
-          slidesPerView: 1
-        }
-      },
-    };
-    var mySwiper = new Swiper(sliderSelector, options);
-
-    // Initialize Swiper Slider
-    mySwiper.init();
-
   $(document).on('click', function(e) {
-    if ($(e.target).closest('.header__menu-icon').length) {
+    if ($(e.target).closest('.header__icon').length) {
       $('.menu-mobile').toggleClass('active');
     }
     else if (!$(e.target).closest('.menu-mobile').length) {
@@ -133,12 +93,54 @@ $(document).ready(function (e) {
 			$('.js_header').removeClass('fixed');
 		}
 	});
+
+  // Swiper Slider
+    var sliderSelector = '.swiper-container',
+    options = {
+      init: false,
+      loop: true,
+      speed: 800,
+      slidesPerView: 3,
+      centeredSlides : true,
+      autoplay: false,
+      effect: 'coverflow',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 1
+        },
+        992: {
+          slidesPerView: 1
+        },
+        1024: {
+          slidesPerView: 2
+        },
+      },
+    };
+    var mySwiper = new Swiper(sliderSelector, options);
+
+    // Initialize Swiper Slider
+    mySwiper.init();
 });
 
-$(window).on('load', function () {
+$(window).on('load', function() {
   LacquanProject.onLoad();
 });
 
-$(window).on('resize', function () {
+$(window).on('resize', function() {
   LacquanProject.reSize();
 });
