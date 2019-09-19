@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tuyển dụng</title>
+    <title>Đặt bàn</title>
     <meta charset="utf-8" />
-    <meta name="description" content="Tuyển dụng" />
-    <meta name="keywords" content="Tuyển dụng" />
+    <meta name="description" content="Đặt bàn" />
+    <meta name="keywords" content="Đặt bàn" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" />
@@ -53,11 +53,11 @@
       </div>
     </div>
     <div class="main">
-      <div class="section recruitment">
+      <div class="section reservation">
         <div class="container">
-          <div class="recruitment__inner">
-            <h3 class="recruitment__title">Nộp đơn ứng tuyển công việc</h3>
-            <div class="recruitment__form form">
+          <div class="reservation__inner">
+            <h3 class="reservation__title">Thông tin đặt bàn</h3>
+            <div class="reservation__form form">
               <div class="form-group form-customize form-error">
                 <label class="label-title" for="name">Họ &amp; tên (Fullname)<span class="required">*</span>
                 </label>
@@ -75,16 +75,26 @@
                 <input class="form-control" type="text" id="number" placeholder="0999999999" />
               </div>
               <div class="form-group form-customize">
-                <label class="label-title" for="cv">Hồ sơ & CV</label>
-                <div class="recruitment__upload upload">
-                  <div class="upload__full">
-                    <input class="upload__file" type="file">CV của bạn *
-                    <div class="upload__more">Click để chọn & tải lên CV của bạn</div>
+                <label class="label-title" for="number1">Số lượng người<span class="required">*</span>
+                </label>
+                <input class="form-control" type="text" id="number1" placeholder="10" />
+              </div>
+              <div class="form-group form-customize calendar">
+                <label class="label-title" for="calendar1">Thời gian<span class="required">*</span>
+                </label>
+                <div class="input-group date js-calendar" id="calendar1" data-target-input="nearest">
+                  <input class="form-control datetimepicker-input js-calendar-input" type="text" data-target="#calendar1" placeholder="18/09/2019" />
+                  <div class="input-group-append" data-target="#calendar1" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="icon-calendar"></i></div>
                   </div>
                 </div>
               </div>
+              <div class="form-group form-customize form-textarea">
+                <label class="label-title">Ghi chú</label>
+                <textarea class="form-control" placeholder="Chọn chỗ thoáng mát, sạch sẽ, ..." rows="4"></textarea>
+              </div>
               <div class="text-center mt-4">
-                <button class="recruitment__link btn-link">Nộp đơn ứng tuyển</button>
+                <button class="reservation__link btn-link">Đặt bàn</button>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 const LacquanProject = {
   Init: function() {
     this.slickSlider();
@@ -92,7 +91,23 @@ $(document).ready(function(e) {
 		} else {
 			$('.js_header').removeClass('fixed');
 		}
-	});
+  });
+
+  // Calendar
+  // $('.js-calendar').datetimepicker({
+  //   locale: 'en',
+  //   format: 'DD/MM/YYYY',
+  //   allowInputToggle: true
+  // });
+
+  // Not allow user edit calendar input
+  $('.js-calendar-input').focus(function() {
+    $(this).attr('readonly', 'readonly').css('background', '#fff');
+  });
+
+  $('.js-calendar-input').blur(function() {
+    $(this).removeAttr('readonly');
+  });
 
   // Swiper Slider
     var sliderSelector = '.swiper-container',
