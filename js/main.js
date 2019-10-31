@@ -1,161 +1,133 @@
-const LacquanProject = {
-  Init: function() {
+const ImplProject = {
+  Init: function () {
     this.slickSlider();
   },
 
-  slickSlider: function() {
-    $('.js_banner-slider').slick({
+  slickSlider: function () {
+    $('.js-static-images').slick({
       arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
       autoplay: true,
-    });
-
-    $('.js_slider').slick({
-      arrows: false,
-      slidesToShow: 3,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      speed: 8000,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      dots: false,
-      autoplay: true,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      swipe: false,
+      touchMove: false,
+      variableWidth: true,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
+            slidesToShow: 1
           }
         }
       ]
     });
 
-    $('.js_testimonial-slider').slick({
+    $('.js-business-partner').slick({
       arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
       autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      speed: 8000,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      swipe: false,
+      touchMove: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+
+    $('.js-why-we-box').slick({
+      arrows: false,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      swipeToSlide: true,
+      edgeFriction: 0,
+      touchThreshold: 10,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: '0',
+            slidesToShow: 1,
+            variableWidth: false,
+          }
+        }
+      ]
+    });
+
+    $('.js-our-service').slick({
+      dots: true,
+      centerMode: true,
+      arrows: false,
+      infinite: true,
+      speed: 600,
+      slidesToShow: 3,
+      centerPadding: 0,
+      slidesToScroll: 1,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   },
 
-  onLoad: function() {
+  onLoad: function () {
     console.log('Onload Project');
   },
 
-  reSize: function() {
+  reSize: function () {
     console.log('Resize Project');
   }
 }
 
-$(document).ready(function(e) {
-  LacquanProject.Init();
+$(document).ready(function () {
+  ImplProject.Init();
 
   AOS.init({
     duration: 1200,
     easing: 'ease-out-quart'
   })
 
-  $(document).on('click', function(e) {
-    if ($(e.target).closest('.header__icon').length) {
-      $('.menu-mobile').toggleClass('active');
+  $(document).on('click', function (e) {
+    if ($(e.target).closest('.js-icon-menu').length) {
+      $('.js-menu-mobile').toggleClass('active');
+    } else if (!$(e.target).closest('.js-menu-mobile').length) {
+      $('.js-menu-mobile').removeClass('active');
     }
-    else if (!$(e.target).closest('.menu-mobile').length) {
-      $('.menu-mobile').removeClass('active');
-    }
   });
 
-  $('.menu-mobile__icon').on('click', function(e) {
-    $('.menu-mobile').removeClass('active');
+  $('.js-icon-close').on('click', function (e) {
+    $('.js-menu-mobile').removeClass('active');
   });
-
-  $(window).bind('scroll', function(e) {
-		if ($(window).scrollTop() > 95) {
-			$('.js_header').addClass('fixed');
-		} else {
-			$('.js_header').removeClass('fixed');
-		}
-  });
-
-  // Calendar
-  // $('.js-calendar').datetimepicker({
-  //   locale: 'en',
-  //   format: 'DD/MM/YYYY',
-  //   allowInputToggle: true
-  // });
-
-  // Not allow user edit calendar input
-  $('.js-calendar-input').focus(function() {
-    $(this).attr('readonly', 'readonly').css('background', '#fff');
-  });
-
-  $('.js-calendar-input').blur(function() {
-    $(this).removeAttr('readonly');
-  });
-
-  // Swiper Slider
-    var sliderSelector = '.swiper-container',
-    options = {
-      init: false,
-      loop: true,
-      speed: 800,
-      slidesPerView: 3,
-      centeredSlides : true,
-      autoplay: false,
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        480: {
-          slidesPerView: 1
-        },
-        992: {
-          slidesPerView: 1
-        },
-        1024: {
-          slidesPerView: 2
-        },
-      },
-    };
-    var mySwiper = new Swiper(sliderSelector, options);
-
-    // Initialize Swiper Slider
-    mySwiper.init();
 });
 
-$(window).on('load', function() {
-  LacquanProject.onLoad();
+$(window).on('load', function () {
+  ImplProject.onLoad();
 });
 
-$(window).on('resize', function() {
-  LacquanProject.reSize();
+$(window).on('resize', function () {
+  ImplProject.reSize();
 });
