@@ -1,0 +1,82 @@
+.main-body {
+  background-color: #f6f6f6;
+  padding: 40px 0 220px;
+}
+
+@media (max-width: 767.98px) {
+  .main-body {
+    padding-bottom: 50px;
+  }
+}
+
+.main-content {
+  margin-top: 40px;
+}
+
+.main-content--manage {
+  margin-top: 25px;
+}
+
+@media (max-width: 767.98px) {
+  .main-content--manage {
+    margin-top: 10px;
+  }
+}
+
+.main-content--manage .jobs__item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-content--manage .jobs__item-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .main-content--manage .jobs__item-name {
+    font-size: 16px;
+  }
+}
+
+.main-content--manage .jobs__item-des {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .main-content--manage .jobs__item-des {
+    font-size: 14px;
+  }
+}
+
+.main-content--manage .jobs__item-right .button + .button {
+  margin-top: 15px;
+}
+
+.section__title {
+  color: #252e38;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+@media (max-width: 767.98px) {
+  .section__title {
+    font-size: 26px;
+  }
+}
+
+.section__des {
+  color: #252e38;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+  .section__des {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,63 @@
+.button-switch {
+  height: 30px;
+}
+
+.button-switch input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  /* stylelint-disable max-nesting-depth */
+}
+
+.button-switch input[type='checkbox']:checked + label {
+  background-color: #62ca4a;
+}
+
+.button-switch input[type='checkbox']:checked + label:before {
+  color: #fff;
+  content: attr(data-on);
+  left: 0;
+}
+
+.button-switch input[type='checkbox']:checked + label:after {
+  background-color: #fff;
+  left: auto;
+  right: 5px;
+}
+
+.button-switch label {
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin-bottom: 0;
+  position: relative;
+  width: 70px;
+}
+
+.button-switch label:before {
+  color: #505564;
+  content: attr(data-off);
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  line-height: 22px;
+  padding: 5px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.button-switch label:after {
+  background-color: #c8c8c8;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=switch.css.map */

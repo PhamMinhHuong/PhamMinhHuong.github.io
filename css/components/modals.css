@@ -1,0 +1,111 @@
+.modal-backdrop {
+  background-color: #3181bf;
+}
+
+.modal-accept .modal__body {
+  padding: 0 50px 48px;
+}
+
+@media (max-width: 767.98px) {
+  .modal-accept .modal__body {
+    padding: 0 30px 40px;
+  }
+}
+
+.modal__content {
+  background-color: #fff;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+
+.modal__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 24px 24px 10px;
+}
+
+.modal__close {
+  cursor: pointer;
+  font-size: 0;
+}
+
+.modal__close i {
+  color: #7c909a;
+  font-size: 24px;
+}
+
+.modal__body {
+  padding: 0 50px 25px;
+}
+
+@media (max-width: 767.98px) {
+  .modal__body {
+    padding: 0 30px 25px;
+  }
+}
+
+.modal__image {
+  text-align: center;
+}
+
+.modal__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal__image img:hover {
+  opacity: .75;
+}
+
+.modal__info {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.modal__title {
+  color: #252e38;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .modal__title {
+    font-size: 28px;
+  }
+}
+
+.modal__des {
+  color: #556270;
+  font-size: 16px;
+}
+
+.modal__btn .button + .button {
+  margin-top: 12px;
+}
+
+.modal__note {
+  color: #556270;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.modal__note strong {
+  margin-right: 5px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 540px;
+  }
+}
+
+/*# sourceMappingURL=modals.css.map */

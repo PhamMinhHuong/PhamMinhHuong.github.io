@@ -1,0 +1,96 @@
+.button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 2px solid #e1e1e1;
+  border-radius: 25px;
+  color: #c1c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 12px 25px 10px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.button:hover, .button:focus {
+  border-color: #1c9bf1;
+  color: #1c9bf1;
+}
+
+.button__icon {
+  color: #fff;
+  font-size: 21px;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.button--primary {
+  background-color: #1c9bf1;
+  border-color: #1c9bf1;
+  color: #fff;
+}
+
+.button--primary:hover, .button--primary:focus {
+  background-color: #0b7cdc;
+  border-color: #0b7cdc;
+  color: #fff;
+}
+
+.button--danger {
+  background-color: #f25151;
+  border-color: #f25151;
+  color: #fff;
+}
+
+.button--danger:hover, .button--danger:focus {
+  background-color: #fe8084;
+  border-color: #fe8084;
+  color: #fff;
+}
+
+.button--danger-outline {
+  background-color: #fff;
+  border-color: #f25151;
+  color: #f25151;
+}
+
+.button--danger-outline:hover, .button--danger-outline:focus {
+  border-color: #fe8084;
+  color: #fe8084;
+}
+
+.button--dashed {
+  background-color: #fff;
+  border: 1px dashed #0b7cdc;
+  color: #4dbff4;
+}
+
+.button--dashed:hover, .button--dashed:focus {
+  border-color: #1c9bf1;
+  color: #1c9bf1;
+}
+
+.button--small {
+  font-size: 14px;
+  padding: 10px 20px 8px;
+  min-width: 154px;
+}
+
+.button--full {
+  width: 100%;
+}
+
+/*# sourceMappingURL=buttons.css.map */

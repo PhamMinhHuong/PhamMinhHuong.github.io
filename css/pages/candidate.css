@@ -1,0 +1,201 @@
+.candidate-vitae {
+  margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .recruitment {
+    margin-top: 30px;
+  }
+}
+
+.recruitment__head-candidate {
+  padding: 30px 0;
+}
+
+.recruitment__advantages {
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+.recruitment__advantages li {
+  margin-bottom: 15px;
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.recruitment__checked {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #daefa8;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  vertical-align: bottom;
+  margin-right: 15px;
+  text-indent: 0;
+}
+
+.recruitment__checked i {
+  color: #a2bf5b;
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  font-size: 20px;
+}
+
+.recruitment__content-form {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 30px 30px;
+}
+
+@media (max-width: 767px) {
+  .recruitment__content-form {
+    padding: 15px;
+  }
+}
+
+.recruitment__content-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.recruitment__head-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.recruitment__head-require {
+  font-size: 14px;
+}
+
+.recruitment__form-primary {
+  margin-bottom: 50px;
+}
+
+.recruitment__form-title {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.recruitment__form-title h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recruitment__form-title i {
+  color: #4dbff4;
+  margin-right: 15px;
+}
+
+.recruitment__form-title .icon-fonts--cv {
+  font-size: 22px;
+  vertical-align: bottom;
+}
+
+.recruitment__form-ipt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recruitment__form-ipt label {
+  width: 190px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .recruitment__form-ipt label {
+    width: 100%;
+  }
+}
+
+.recruitment__form-ipt input,
+.recruitment__form-ipt select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 8px;
+  text-indent: 7px;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  outline: none;
+  color: #556270;
+}
+
+.recruitment__form-ipt input:focus,
+.recruitment__form-ipt select:focus {
+  border-color: #1c9bf1;
+}
+
+.recruitment__form-ipt select {
+  background: url("../images/arrow.png") no-repeat;
+  background-position: top 15px right 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.recruitment__form-2col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recruitment__form-2col input,
+.recruitment__form-2col select {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: calc(50% - 7px);
+}
+
+@media (max-width: 767px) {
+  .recruitment__form-2col input,
+  .recruitment__form-2col select {
+    width: 100%;
+  }
+  .recruitment__form-2col input:nth-child(2),
+  .recruitment__form-2col select:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.recruitment__form-candidate {
+  margin-bottom: 40px;
+}
+
+.recruitment__form-subbmit .button {
+  margin: 0;
+}
+
+/*# sourceMappingURL=candidate.css.map */

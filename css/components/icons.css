@@ -1,0 +1,228 @@
+@font-face {
+  font-family: marketingworksicons;
+  src: url("../fonts/marketingworksicons.eot?mro1z2") format("eot"), url("../fonts/marketingworksicons.ttf?mro1z2") format("truetype"), url("../fonts/marketingworksicons.woff?mro1z2") format("woff"), url("../fonts/marketingworksicons.svg?mro1z2#marketingworksicons") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+[class^='icon-fonts--'],
+[class*=' icon-fonts--'] {
+  font-family: marketingworksicons !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fonts--allowance:before {
+  content: '\e900';
+}
+
+.icon-fonts--apply:before {
+  content: '\e901';
+}
+
+.icon-fonts--bag:before {
+  content: '\e902';
+}
+
+.icon-fonts--bookmark:before {
+  content: '\e903';
+}
+
+.icon-fonts--career:before {
+  content: '\e904';
+}
+
+.icon-fonts--clock:before {
+  content: '\e905';
+}
+
+.icon-fonts--collapse:before {
+  content: '\e906';
+}
+
+.icon-fonts--computer:before {
+  content: '\e907';
+}
+
+.icon-fonts--cost:before {
+  content: '\e908';
+}
+
+.icon-fonts--deadline:before {
+  content: '\e909';
+}
+
+.icon-fonts--dola:before {
+  content: '\e90a';
+}
+
+.icon-fonts--educate:before {
+  content: '\e90b';
+}
+
+.icon-fonts--expand:before {
+  content: '\e90c';
+}
+
+.icon-fonts--experience:before {
+  content: '\e90d';
+}
+
+.icon-fonts--facebook:before {
+  content: '\e90e';
+}
+
+.icon-fonts--health-care:before {
+  content: '\e90f';
+}
+
+.icon-fonts--increase:before {
+  content: '\e910';
+}
+
+.icon-fonts--instagram:before {
+  content: '\e911';
+}
+
+.icon-fonts--insurrance:before {
+  content: '\e912';
+}
+
+.icon-fonts--linked-in:before {
+  content: '\e913';
+}
+
+.icon-fonts--location:before {
+  content: '\e914';
+}
+
+.icon-fonts--menu:before {
+  content: '\e915';
+}
+
+.icon-fonts--next:before {
+  content: '\e916';
+}
+
+.icon-fonts--previous:before {
+  content: '\e917';
+}
+
+.icon-fonts--rank:before {
+  content: '\e918';
+}
+
+.icon-fonts--recruitment:before {
+  content: '\e919';
+}
+
+.icon-fonts--reset:before {
+  content: '\e91a';
+}
+
+.icon-fonts--reward:before {
+  content: '\e91b';
+}
+
+.icon-fonts--salary:before {
+  content: '\e91c';
+}
+
+.icon-fonts--scale:before {
+  content: '\e91d';
+}
+
+.icon-fonts--search:before {
+  content: '\e91e';
+}
+
+.icon-fonts--sex:before {
+  content: '\e91f';
+}
+
+.icon-fonts--ticked:before {
+  content: '\e920';
+}
+
+.icon-fonts--time:before {
+  content: '\e921';
+}
+
+.icon-fonts--travel:before {
+  content: '\e922';
+}
+
+.icon-fonts--user:before {
+  content: '\e923';
+}
+
+.icon-fonts--warning:before {
+  content: '\e924';
+}
+
+.icon-fonts--website:before {
+  content: '\e927';
+}
+
+.icon-fonts--youtube:before {
+  content: '\e928';
+}
+
+.icon-fonts--bell:before {
+  content: '\e929';
+}
+
+.icon-fonts--close:before {
+  content: '\e92a';
+}
+
+.icon-fonts--cv:before {
+  content: '\e92b';
+}
+
+.icon-fonts--edit:before {
+  content: '\e92c';
+}
+
+.icon-fonts--email:before {
+  content: '\e92d';
+}
+
+.icon-fonts--logout:before {
+  content: '\e92e';
+}
+
+.icon-fonts--password:before {
+  content: '\e92f';
+}
+
+.icon-fonts--star:before {
+  content: '\e930';
+}
+
+.icon-fonts--tick:before {
+  content: '\e932';
+}
+
+.icon-fonts--upload-1:before {
+  content: '\e933';
+}
+
+.icon-fonts--upload-2:before {
+  content: '\e934';
+}
+
+.icon-fonts--down:before {
+  content: '\e935';
+}
+
+.icon-fonts--bell2:before {
+  content: '\e936';
+}
+
+/*# sourceMappingURL=icons.css.map */

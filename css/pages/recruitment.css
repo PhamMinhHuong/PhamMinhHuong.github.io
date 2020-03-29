@@ -1,0 +1,62 @@
+@media (max-width: 767.98px) {
+  .recruitment {
+    margin-top: 30px;
+  }
+}
+
+.recruitment__box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 767.98px) {
+  .recruitment__box {
+    min-height: 60px;
+  }
+}
+
+.recruitment__box-text {
+  color: #252e38;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .recruitment__box-text {
+    font-size: 16px;
+  }
+}
+
+.recruitment__title {
+  color: #252e38;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 40px 20px 10px 20px;
+}
+
+@media (max-width: 767.98px) {
+  .recruitment__title {
+    font-size: 24px;
+    margin: 30px 0 10px;
+  }
+}
+
+.recruitment__title-sub {
+  color: #1c9bf1;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+.recruitment__title--jobs {
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=recruitment.css.map */
