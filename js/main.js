@@ -74,6 +74,21 @@ function onSlickSlider() {
   });
 }
 
+function onDonutchart() {
+  var radius = parseInt($('.donut-progress').attr('r'));
+  var perimeter = 2 * 3.14 * radius;
+
+  $('.donut-progress').each(function() {
+    var amount = parseFloat($(this).attr('data-fill'));
+    var fillAmount = perimeter - (perimeter * amount) / 100;
+
+    $(this).attr({
+      'stroke-dasharray': perimeter,
+      'stroke-dashoffset': fillAmount,
+    });
+  });
+}
+
 $(document).on('click', function(e) {
   if ($(e.target).closest('.js-icon-menu').length) {
     $('.js-menu-mobile').toggleClass('active');
@@ -89,6 +104,7 @@ $('.js-icon-close').on('click', function() {
 $(document).ready(function() {
   onSelect2();
   onSlickSlider();
+  onDonutchart();
 });
 
 $(window).on('load', function() {

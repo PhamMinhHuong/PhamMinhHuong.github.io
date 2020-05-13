@@ -96,7 +96,6 @@ strong {
 }
 
 .position-sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 20px;
 }
@@ -155,7 +154,6 @@ h6,
 }
 
 .position-sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 20px;
 }
