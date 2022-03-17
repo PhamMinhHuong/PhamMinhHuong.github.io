@@ -1,0 +1,196 @@
+.form-2column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+@media (max-width: 767.98px) {
+  .form-2column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
+.form-2column .form-customize {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 2 - 30px);
+          flex: 0 0 calc(100% / 2 - 30px);
+  margin: 0 15px 15px;
+  width: calc(100% / 2 - 30px);
+}
+
+@media (max-width: 767.98px) {
+  .form-2column .form-customize {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 0 15px;
+    width: 100%;
+  }
+}
+
+.form-full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.form-customize {
+  margin: 0 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+.form-customize .label-title {
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin: 0 0 8px;
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  .form-customize .label-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .form-customize .label-title {
+    font-size: 16px;
+  }
+}
+
+.form-customize .label-title .required {
+  color: #ec1b2e;
+  margin: 0 0 0 3px;
+  position: absolute;
+  top: -2px;
+}
+
+.form-customize .form-control {
+  background-color: #f7f8f8;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #3d3d3d;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  letter-spacing: .05em;
+  line-height: 24px;
+  padding: 10px 30px 10px 15px;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .form-customize .form-control {
+    font-size: 14px;
+    height: 42px;
+    line-height: 20px;
+  }
+}
+
+.form-customize .form-control::-webkit-input-placeholder {
+  color: #a4a4a4;
+}
+
+.form-customize .form-control::-moz-placeholder {
+  color: #a4a4a4;
+}
+
+.form-customize .form-control:-ms-input-placeholder {
+  color: #a4a4a4;
+}
+
+.form-customize .form-control::-ms-input-placeholder {
+  color: #a4a4a4;
+}
+
+.form-customize .form-control::placeholder {
+  color: #a4a4a4;
+}
+
+@media (max-width: 575.98px) {
+  .form-customize .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-customize .form-control::-moz-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-customize .form-control:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-customize .form-control::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .form-customize .form-control::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.form-customize .form-control:focus {
+  border-color: #58b84f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-customize .form-control[readonly], .form-customize .form-control[disabled] {
+  background-color: #e4e4e4;
+  color: #464e5f;
+}
+
+.form-customize .form-control[disabled] {
+  pointer-events: none;
+}
+
+.form-customize .form-control--textarea {
+  min-height: 120px;
+}
+
+.form-customize .form-input {
+  position: relative;
+}
+
+.form-customize .form-input .form-control {
+  padding-right: 40px;
+}
+
+.form-customize--error .form-control {
+  border-color: #ec1b2e;
+}
+
+.form-customize--error .form-control:focus {
+  border-color: #ec1b2e;
+}
+
+.error-text {
+  color: #ec1b2e;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+.note-text {
+  color: #3d3d3d;
+  font-size: 14px;
+  font-style: italic;
+  margin: 10px 0 0;
+}
+
+/*# sourceMappingURL=inputs.css.map */

@@ -1,36 +1,71 @@
 @font-face {
-  font-family: NunitoSans;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  src: local("Nunito Sans Regular"), url("../fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: 300;
+  src: local("Roboto Light"), url("../fonts/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: NunitoSans;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: local("Nunito Sans ExtraLight"), url("../fonts/NunitoSans-ExtraLight.woff") format("woff");
+  src: local("Roboto Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: NunitoSans;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  src: local("Nunito Sans Light"), url("../fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 500;
+  src: local("Roboto Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: NunitoSans;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 400;
+  src: local("Roboto Italic"), url("../fonts/Roboto-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  src: local("Nunito Sans Bold"), url("../fonts/NunitoSans-Bold.woff") format("woff");
+  src: local("Roboto Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: NunitoSans;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  src: local("Nunito Sans SemiBold"), url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 300;
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=typography.css.map */

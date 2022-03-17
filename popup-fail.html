@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Popup confirm</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Popup confirm" />
+    <meta name="keywords" content="Popup confirm" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main-body">
+        <div class="container">
+          <!-- Button trigger modal-->
+          <div class="text-center mt-3 pt-3">
+            <button class="button button--primary m-auto" data-bs-toggle="modal" data-bs-target="#modal-fail">Trigger Modal
+            </button>
+          </div>
+          <!-- Modal-->
+          <div class="modal fade modal-custom " id="modal-fail" tabindex="-1" role="dialog" aria-labelledby="modal-fail" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-custom__content">
+                <div class="modal-custom__header"><span class="modal-custom__action" data-bs-dismiss="modal"><i class="icon-fonts icon-fonts--close"></i></span></div>
+                <div class="modal-custom__body">
+                  <h3 class="modal-custom__title">確認メッセージ</h3>
+                  <div class="modal-custom__icon fail"><i class="icon-fonts icon-fonts--fail"></i>
+                  </div>
+                  <p class="modal-custom__des">メール送信に失敗しました。</p>
+                  <div class="modal-custom__btn">
+                    <button class="button button--normal">キャンセル
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

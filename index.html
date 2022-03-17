@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>List links</title>
+    <title>Pages List</title>
     <meta charset="utf-8" />
-    <meta name="description" content="List links" />
-    <meta name="keywords" content="List links" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Pages List" />
+    <meta name="keywords" content="Pages List" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
     <style>
-      .page-list {
-        background: #fff;
-        position: relative;
+      .page-list
+      {
+        background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
         overflow: hidden;
         margin: 0 -15px;
-        min-height: 100vh;
+        height: 100vh;
+        overflow-y: auto;
       }
 
-      .page-list__title {
+      .page-list__title
+      {
         margin: 40px auto 35px;
         display: flex;
         justify-content: center;
-        position: relative;
-        z-index: 9;
-        color: #000;
+        color: #fff;
       }
 
-      .page-list .table {
-        background-color: #fff;
-        position: relative;
-        z-index: 9;
+      .page-list .table
+      {
         width: 65%;
         margin: 0 auto 65px;
-        border-radius: 8px;
-        overflow: hidden;
+        border-collapse: separate;
+        border-spacing: 0 5px;
       }
 
       .page-list .table th,
-      .page-list .table td {
-        color: #fff;
-        padding: 13px 15px;
-        border-color: rgba(255, 255, 255, 0.15);
+      .page-list .table td
+      {
+        padding: 12px 16px;
+        font-size: 14px;
+        border: none;
       }
 
-      .page-list .table thead tr:first-child th {
-        background-color: rgba(255, 255, 255, 0.25);
+      .page-list .table thead tr th
+      {
+        color: #fff;
+        letter-spacing: 1px;
       }
 
-      .page-list__link {
-        color: #fff;
+      .page-list .table tbody tr
+      {
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        background: #fff;
+      }
+
+      .page-list .table tbody tr td:first-child
+      {
+        border-radius: 4px 0px 0px 4px;
+      }
+
+      .page-list .table tbody tr td:last-child
+      {
+        border-radius: 0px 4px 4px 0px;
+        border-right: none;
+      }
+
+      .page-list .table tbody tr:hover
+      {
+        box-shadow: 0 4px 10px rgba($white, .2);
+        transform: translateY(-1px) scale(1.01);
+      }
+
+      .page-list .table tbody tr td a
+      {
+        color: inherit;
+      }
+
+      .page-list__link
+      {
         text-decoration: none;
         display: block;
       }
 
-      .page-list__link:first-letter {
-        font-size: 16px;
-        color: #ffca1a;
+      .page-list__link:first-letter
+      {
+        color: #299989;
       }
 
-      .page-list__link:hover {
-        color: #fff;
+      @media (max-width: 767px)
+      {
+        .page-list .table
+        {
+          padding: 0 15px;
+          width: 100%;
+        }
       }
 
     </style>
@@ -70,10 +102,10 @@
   <body>
     <div class="container-fluid">
       <div class="page-list">
-        <h1 class="page-list__title">Page list</h1>
-        <table class="table table-striped" style="color: #fff">
+        <h1 class="page-list__title">Pages List</h1>
+        <table class="table" style="color: #39352e">
           <thead>
-            <tr style="background-color: black">
+            <tr>
               <th>#</th>
               <th>Link</th>
               <th>Categories</th>
@@ -81,197 +113,46 @@
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: gray">
-              <th>0</th>
-              <td><a class="page-list__link" href="styleguides.html" style="color: #fff" target="_blank">Style Guides</a>
+            <tr style="background-color: #fff5e7">
+              <td>0</td>
+              <td><a class="page-list__link" href="styleguides.html" target="_blank">Style Guides</a>
               </td>
-              <td><span class="page-list__categories">N/A</span>
+              <td><span class="page-list__categories">Style Guides</span>
               </td>
               <td><span class="page-list__file-name">styleguides.html</span>
               </td>
             </tr>
-            <tr style="background-color: #e57373">
-              <th>1</th>
-              <td><a class="page-list__link" href="follow-cv.html" style="color: #fff" target="_blank">Tuyển dụng - Theo dõi CV</a>
+            <tr style="background-color: #f6b24a">
+              <td>1</td>
+              <td><a class="page-list__link" href="home.html" target="_blank">Home</a>
               </td>
-              <td><span class="page-list__categories">Recruitment</span>
+              <td><span class="page-list__categories">Home</span>
               </td>
-              <td><span class="page-list__file-name">follow-cv.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #e57373">
-              <th>2</th>
-              <td><a class="page-list__link" href="jobs-saved.html" style="color: #fff" target="_blank">Tuyển dụng - Việc làm đã lưu</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">jobs-saved.html</span>
+              <td><span class="page-list__file-name">home.html</span>
               </td>
             </tr>
-            <tr style="background-color: #e57373">
-              <th>3</th>
-              <td><a class="page-list__link" href="recruitment-confirm.html" style="color: #fff" target="_blank">Tuyển dụng - QLYCLH - Chờ xác nhận</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">recruitment-confirm.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #e57373">
-              <th>4</th>
-              <td><a class="page-list__link" href="recruitment-accept.html" style="color: #fff" target="_blank">Tuyển dụng - QLYCLH - Đã chấp nhận</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">recruitment-accept.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #e57373">
-              <th>5</th>
-              <td><a class="page-list__link" href="recruitment-expired.html" style="color: #fff" target="_blank">Tuyển dụng - QLYCLH - Hết hạn</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">recruitment-expired.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #e57373">
-              <th>6</th>
-              <td><a class="page-list__link" href="recruitment-candidate.html" style="color: #fff" target="_blank">Tuyển dụng - UV sau đăng nhập</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">recruitment-candidate.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #e57373">
-              <th>7</th>
-              <td><a class="page-list__link" href="company.html" style="color: #fff" target="_blank">Tuyển dụng - UV - Công ty sau đăng nhập</a>
-              </td>
-              <td><span class="page-list__categories">Recruitment</span>
-              </td>
-              <td><span class="page-list__file-name">company.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #848cea">
-              <th>8</th>
-              <td><a class="page-list__link" href="popup-accept.html" style="color: #fff" target="_blank">Popup - Chấp nhận</a>
+            <tr style="background-color: #faa62c">
+              <td>2</td>
+              <td><a class="page-list__link" href="popup-success.html" target="_blank">Popup success</a>
               </td>
               <td><span class="page-list__categories">Popup</span>
               </td>
-              <td><span class="page-list__file-name">popup-accept.html</span>
+              <td><span class="page-list__file-name">popup-success.html</span>
               </td>
             </tr>
-            <tr style="background-color: #848cea">
-              <th>9</th>
-              <td><a class="page-list__link" href="popup-notification.html" style="color: #fff" target="_blank">Popup - Thông báo</a>
+            <tr style="background-color: #faa62c">
+              <td>3</td>
+              <td><a class="page-list__link" href="popup-fail.html" target="_blank">Popup fail</a>
               </td>
               <td><span class="page-list__categories">Popup</span>
               </td>
-              <td><span class="page-list__file-name">popup-notification.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #848cea">
-              <th>10</th>
-              <td><a class="page-list__link" href="popup-recruitment-top.html" style="color: #fff" target="_blank">Popup - Tuyển dụng - Đẩy top</a>
-              </td>
-              <td><span class="page-list__categories">Popup</span>
-              </td>
-              <td><span class="page-list__file-name">popup-recruitment-top.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #848cea">
-              <th>11</th>
-              <td><a class="page-list__link" href="popup-cv-1.html" style="color: #fff" target="_blank">Popup - Tuyển dụng - Ứng tuyển chưa có CV</a>
-              </td>
-              <td><span class="page-list__categories">Popup</span>
-              </td>
-              <td><span class="page-list__file-name">popup-cv-1.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #848cea">
-              <th>12</th>
-              <td><a class="page-list__link" href="popup-cv-2.html" style="color: #fff" target="_blank">Popup - Tuyển dụng - Ứng tuyển đã có CV</a>
-              </td>
-              <td><span class="page-list__categories">Popup</span>
-              </td>
-              <td><span class="page-list__file-name">popup-cv-2.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #bf31ae">
-              <th>13</th>
-              <td><a class="page-list__link" href="candidate-cv.html" style="color: #fff" target="_blank">Ứng viên CV marketing</a>
-              </td>
-              <td><span class="page-list__categories">Candidate</span>
-              </td>
-              <td><span class="page-list__file-name">candidate-cv.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #bf31ae">
-              <th>14</th>
-              <td><a class="page-list__link" href="candidate-vitae.html" style="color: #fff" target="_blank">Ứng viên hồ sơ ứng tuyển</a>
-              </td>
-              <td><span class="page-list__categories">Candidate</span>
-              </td>
-              <td><span class="page-list__file-name">candidate-vitae.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #ff9900">
-              <th>15</th>
-              <td><a class="page-list__link" href="template-cv-01.html" style="color: #fff" target="_blank">Mẫu CV 01</a>
-              </td>
-              <td><span class="page-list__categories">Template-cv</span>
-              </td>
-              <td><span class="page-list__file-name">template-cv-01.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #ff9900">
-              <th>16</th>
-              <td><a class="page-list__link" href="template-cv-02.html" style="color: #fff" target="_blank">Mẫu CV 02</a>
-              </td>
-              <td><span class="page-list__categories">Template-cv</span>
-              </td>
-              <td><span class="page-list__file-name">template-cv-02.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #ff9900">
-              <th>17</th>
-              <td><a class="page-list__link" href="template-cv-03.html" style="color: #fff" target="_blank">Mẫu CV 03</a>
-              </td>
-              <td><span class="page-list__categories">Template-cv</span>
-              </td>
-              <td><span class="page-list__file-name">template-cv-03.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #ff9900">
-              <th>18</th>
-              <td><a class="page-list__link" href="template-cv-04.html" style="color: #fff" target="_blank">Mẫu CV 04</a>
-              </td>
-              <td><span class="page-list__categories">Template-cv</span>
-              </td>
-              <td><span class="page-list__file-name">template-cv-04.html</span>
-              </td>
-            </tr>
-            <tr style="background-color: #ff9900">
-              <th>19</th>
-              <td><a class="page-list__link" href="template-cv-05.html" style="color: #fff" target="_blank">Mẫu CV 05</a>
-              </td>
-              <td><span class="page-list__categories">Template-cv</span>
-              </td>
-              <td><span class="page-list__file-name">template-cv-05.html</span>
+              <td><span class="page-list__file-name">popup-fail.html</span>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/slick-carousel@1.8.1/slick/slick.min.js" crossorigin="anonymous"></script>
-    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="https://www.chartjs.org/samples/latest/utils.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

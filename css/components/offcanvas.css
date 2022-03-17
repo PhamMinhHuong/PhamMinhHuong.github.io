@@ -1,0 +1,123 @@
+.offcanvas-custom {
+  background-color: #ec1b2e;
+  height: 100vh;
+  left: -360px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  width: 360px;
+  z-index: 10;
+}
+
+.offcanvas-custom.active {
+  left: 0;
+}
+
+.offcanvas-custom__inner {
+  max-height: calc(100% - 50px);
+  overflow: auto;
+  padding: 25px 20px;
+}
+
+.offcanvas-custom__top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 10px;
+}
+
+.offcanvas-custom__logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+}
+
+.offcanvas-custom__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offcanvas-custom__logo img {
+  height: 46px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 220px;
+}
+
+.offcanvas-custom__action {
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 20px;
+}
+
+.offcanvas-custom__action i {
+  font-size: 32px;
+}
+
+.offcanvas-custom__list {
+  border-bottom: 1px dashed #e4e4e4;
+  padding: 20px 0;
+}
+
+.offcanvas-custom__link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offcanvas-custom__link:not(:last-child) {
+  margin: 0 0 15px;
+}
+
+.offcanvas-custom__link.active, .offcanvas-custom__link:hover {
+  color: #ffd3d0;
+}
+
+.offcanvas-custom__name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.body-overlay {
+  background-color: #000;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  width: 0;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=offcanvas.css.map */
